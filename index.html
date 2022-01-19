@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/style.css" type="css" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <title>Bootstrap Project</title>
+</head>
+
+<body>
+    <!------------Navbar------------>
+    <div class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark text-light py-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">DART</a>
+            <button data-bs-toggle="collapse" data-bs-target="#navItem" class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navItem">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Discover</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------Jumbotron------------>
+    <section class="bg-white text-dark p-5 mt-5 mt-md-0 text-center text-sm-start">
+        <div class="container">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Find art you <span class="text-danger">Love ❤</span></h1>
+                    <p class="my-4">
+                        At Dart , we make it our mission to help you discover and buy from the best emerging artists
+                        around the world. Dart is your portal to thousands of original works by today’s top artists.
+                    </p>
+                    <button data-bs-toggle="modal" data-bs-target="#enquire" class="btn btn-lg btn-primary">Enquire
+                        Now</button>
+                </div>
+
+                <img class="w-50 d-none d-sm-block"
+                    src="https://images.unsplash.com/photo-1562963527-ab1b093b0ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=948&q=80"
+                    alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- modal  -->
+    <div class="modal fade" id="enquire">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstname" class="col-form-label">First Name :</label>
+                            <input type="text" id="firstname" class="form-control" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="lastname" class="col-form-label">Last Name :</label>
+                            <input type="text" id="lastname" class="form-control" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email :</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">Phone :</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- newsletter  -->
+    <section class="bg-dark text-light fs-2 border-5 border-danger">
+        <div class="container p-5">
+            <div class="d-md-flex align-items-center justify-content-between flex-row">
+                <h3 class=" mt-md-3 mb-3">Sign
+                    Up
+                    For Our <br> Newsletter</h3>
+                <div class=" input-group news-input">
+                    <input type="email" class="form-control pe-md-5" id="InputEmail" placeholder="Enter Email">
+                    <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousal  -->
+    <div class="container text-white text-center bg-dark my-5 py-3">
+        <h3>Featured Art</h3>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                                class="w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/265946/pexels-photo-265946.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/296649/pexels-photo-296649.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="..." class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/3573555/pexels-photo-3573555.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/417458/pexels-photo-417458.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                                class="w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/2156883/pexels-photo-2156883.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                class="w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/5825575/pexels-photo-5825575.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                class="w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/2495173/pexels-photo-2495173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                class="w-100" alt="...">
+                        </div>
+                        <div class="col">
+                            <img height="200px"
+                                src="https://images.pexels.com/photos/3838285/pexels-photo-3838285.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                class="w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- learn section  -->
+    <section class="bg-dark text-light p-0 p-md-5 pb-2">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md p-5">
+                    <h2>Buy Paintings</h2>
+
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum earum voluptates
+                        fugit! Quidem, dolorum ducimus blanditiis quia iusto odio eveniet, veritatis natus architecto
+                        quas praesentium doloremque, commodi quos facere.</p>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo a laboriosam, alias optio
+                        perspiciatis nesciunt? Ipsam dolor non, nihil praesentium similique laudantium vero. Modi iste
+                        nemo unde.</p>
+
+                    <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i> Read More </a>
+                </div>
+
+                <div class="col-md">
+                    <img src="https://images.unsplash.com/photo-1627843240167-b1f9d28f732e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2232&amp;q=80"
+                        class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions (Accordian)-->
+
+    <section class="bg-white text-dark text-center">
+        <div class="container">
+            <div class="p-3">
+                <h2 class="">Frequently Asked Questions</h2>
+                <div class="p-3">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne">
+                                    How do you ship ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Provident ad incidunt
+                                    inventore sed, alias delectus totam suscipit laborum adipisci eos dolorum molestiae
+                                    ut
+                                    harum quisquam
+                                    deserunt iusto in aliquid officia! Minus molestias mollitia dicta voluptatum placeat
+                                    similique cum in
+                                    debitis?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo">
+                                    Where are you located ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Atque
+                                    totam similique
+                                    suscipit nemo, voluptatibus reiciendis animi? Iure, magni possimus accusamus
+                                    laboriosam
+                                    officiis,
+                                    architecto fuga alias repudiandae nostrum aliquid inventore tempore. Lorem ipsum
+                                    dolor
+                                    sit amet
+                                    consectetur adipisicing elit. Eaque, libero!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree">
+                                    What happens if I don't receive my package ?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Magnam
+                                    excepturi quis
+                                    expedita corrupti. Molestiae totam inventore culpa nisi optio? Sed! Lorem ipsum
+                                    dolor
+                                    sit amet
+                                    consectetur adipisicing elit. Dolorum vero veniam quibusdam culpa recusandae nulla
+                                    neque
+                                    pariatur
+                                    voluptatem quidem assumenda.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- curators section using cards  -->
+
+    <section class="bg-dark">
+        <div class="container bg-dark text-white p-sm-2 p-5">
+            <div class="bg-dark text-white p-sm-2">
+                <h2 class="text-center">Our Curators</h2>
+                <p class="lead text-center">Our curators curate the best pieces from around the world to be delivered at
+                    your
+                    doorstep</p>
+                <div class="row">
+                    <div class="col col-lg-3 col-md-6 d-flex align-items-center justify-content-center my-2">
+                        <div class="card" style="width: 20rem;">
+                            <div
+                                class="card-body d-flex align-items-center justify-content-center text-dark flex-column m-3">
+                                <img src="https://media.istockphoto.com/photos/portrait-of-smiling-senior-woman-with-eyeglasses-picture-id805011948?s=612x612"
+                                    class="card-img-top rounded-circle w-50 h-50" alt="...">
+                                <h3 class="card-title">Jane Deo</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Commodi,
+                                    similique. Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, unde!</p>
+                                <div>
+                                    <a href="https://www.instagram.com/" class="text-dark m-1"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://www.facebook.com/" class="text-dark m-1"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                                        class="text-dark m-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/" class="text-dark m-1"><i
+                                            class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 d-flex align-items-center justify-content-center my-2">
+                        <div class="card" style="width: 20rem;">
+                            <div
+                                class="card-body d-flex align-items-center justify-content-center text-dark flex-column m-3">
+                                <img src="https://media.istockphoto.com/photos/portrait-of-smiling-senior-woman-with-eyeglasses-picture-id805011948?s=612x612"
+                                    class="card-img-top rounded-circle w-50 h-50" alt="...">
+                                <h3 class="card-title">Jane Deo</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Commodi,
+                                    similique. Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, unde!</p>
+                                <div>
+                                    <a href="https://www.instagram.com/" class="text-dark m-1"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://www.facebook.com/" class="text-dark m-1"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                                        class="text-dark m-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/" class="text-dark m-1"><i
+                                            class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 d-flex align-items-center justify-content-center my-2">
+                        <div class="card" style="width: 20rem;">
+                            <div
+                                class="card-body d-flex align-items-center justify-content-center text-dark flex-column m-3">
+                                <img src="https://media.istockphoto.com/photos/portrait-of-smiling-senior-woman-with-eyeglasses-picture-id805011948?s=612x612"
+                                    class="card-img-top rounded-circle w-50 h-50" alt="...">
+                                <h3 class="card-title">Jane Deo</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Commodi,
+                                    similique. Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, unde!</p>
+                                <div>
+                                    <a href="https://www.instagram.com/" class="text-dark m-1"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://www.facebook.com/" class="text-dark m-1"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                                        class="text-dark m-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/" class="text-dark m-1"><i
+                                            class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 col-md-6 d-flex align-items-center justify-content-center my-2">
+                        <div class="card" style="width: 20rem;">
+                            <div
+                                class="card-body d-flex align-items-center justify-content-center text-dark flex-column m-3">
+                                <img src="https://media.istockphoto.com/photos/portrait-of-smiling-senior-woman-with-eyeglasses-picture-id805011948?s=612x612"
+                                    class="card-img-top rounded-circle w-50 h-50" alt="...">
+                                <h3 class="card-title">Jane Deo</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Commodi,
+                                    similique. Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, unde!</p>
+                                <div>
+                                    <a href="https://www.instagram.com/" class="text-dark m-1"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://www.facebook.com/" class="text-dark m-1"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                                        class="text-dark m-1"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/" class="text-dark m-1"><i
+                                            class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- contact section  -->
+    <section class="bg-white text-dark py-3">
+        <div class="container">
+            <div class="row p-md-5 p-lg-5 p-sm-5">
+                <div class="col-md m-md-5 m-lg-5">
+                    <h2 class="text-center">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item"><span class="fw-bold">Head Office: </span>24A CyberHub</li>
+                        <li class="list-group-item"><span class="fw-bold">Contact Number: </span>011-123-456</li>
+                        <li class="list-group-item"><span class="fw-bold">Enrollment Email: </span>support@dart.test
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <div class="p-2 m-3 d-flex align-items-center justify-content-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13063688.853336211!2d-128.2874566437957!3d36.92915356812255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1642095319342!5m2!1sen!2sin"
+                            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-light position-relative">
+        <div class="container p-5">
+            <p class="lead text-center">Copyright © 2021 Dart</p>
+            <a href="#"><i class="bi bi-arrow-up-circle fs-1 position-absolute bottom-0 end-0 m-5"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
